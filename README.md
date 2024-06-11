@@ -1,7 +1,5 @@
 # Project Description
-This project explores the fundamentals of React, focusing on the concept of "state". You'll learn to display elements, use JSX, handle events, and update the UI dynamically. The module culminates in building a simple counter application. By the end, you'll understand how to use state to create interactive web applications.
-
-Additionally, you'll implement two buttons that, when clicked, change the text displayed above them to match the name of the clicked button.
+This project explores the fundamentals of React, focusing on the concept of "state". i'll learn to display elements, use JSX, handle events, and update the UI dynamically. The module culminates in building a simple counter application.
 
 # Learning Objectives
 - Understand the basics of React.
