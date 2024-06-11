@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project React I</title>
+
+    <link rel="stylesheet" href="stylesheet.css" />
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      class App extends React.Component {
+        constructor(){
+          super();
+          this.state = {name : "Ninja Ken"}
+        }
+
+        setName = (name) => {
+          this.setState({name : name})
+        }
+
+        render() {
+          return (
+            <>
+              <h1>Hello, {this.state.name}</h1>
+              <button onClick={()=>{this.setName("Ninja Ken")}}>Ninja Ken</button>
+              <button onClick={()=>{this.setName("Guru Domba")}}>Guru Domba</button>
+            </>
+          );
+        }
+      }
+
+      const container = document.getElementById("root")
+      const root = ReactDOM.createRoot(container);
+      root.render(<App/>)
+      
+    </script>
+  </body>
+</html>
